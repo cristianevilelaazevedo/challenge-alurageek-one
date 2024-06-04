@@ -3,7 +3,7 @@
 <p align="left">
 <img alt="Status Concluído" src="https://img.shields.io/badge/STATUS-CONCLU%C3%8DDO-brightgreen">
 </p>
-<img src="img/structboost-project.png" alt="Home da Landing Page">
+
 
 ## Sobre o Projeto 🚀
 
