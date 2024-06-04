@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetsGeek</title>
+    <!--Boxicons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <a href="#" class="logo">
+            <img src="./assets/logo.svg" alt="Logo">
+        </a>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <i class='bx bx-x' id="close-icon"></i>
+        </label>
+
+        <nav class="navbar">
+            <a href="#adicionar">Adicionar Pinturas</a>
+            <a href="#pinturas">Minhas Pinturas</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="container">
+            <div class="texto-esquerda">
+                <h3>O lugar certo para</h3>
+                <h1>Eternizar amizades!</h1>
+                <p>Fazemos pinturas digitais divertidas de animais de abrigos e convertemos em ajuda para as instituições de proteção de animais!</p>
+            </div>
+
+            <div class="imagem">
+                <img src="./img/turminha.png" alt="Pintura de pets">
+            </div>
+        </div>
+    </section>
+
+    <section class="adicionar" id="adicionar">
+        <h2>Adicionar Pinturas:</h2>
+        
+        <div class="formulario">
+            <form action="#" data-formulario>
+                <div class="input-box">
+                    <div class="input-campo campo">
+                        <label class="campo_item" for="nome"></label>
+                        <input name="nome" type="text" placeholder="Nome" id="nome" class="item" autocomplete="off" required data-nome>
+                    </div>
+
+                    <div class="input-campo campo">
+                        <label class="campo_item" for="valor"></label>
+                        <input name="valor" type="number" step="0.01" pattern="\d+(\.\d{2})?" placeholder="Valor" id="valor" class="item" autocomplete="off" required data-valor>
+                    </div>                    
+                </div>
+
+                <div class="input-box">
+                    <div class="input-campo campo img">
+                        <label class="campo_item" for="imagem"></label>
+                        <input name="imagem" type="text" placeholder="Imagem" id="imagem" class="item" autocomplete="off" required data-imagem>
+                    </div>
+                </div>
+                
+            </form>
+
+            <div class="button">
+                <button class="salvar" type="submit">Salvar</button>
+                <button class="limpar" type="reset" data-limpar>Limpar</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="pinturas" id="pinturas">
+        <h2>Minhas Pinturas:</h2>
+
+        <div class="all" data-lista>
+
+            <!--CARD 1-->
+            <!-- <div class="card-sticker">
+                <div class="content">
+                    <div class="image">
+                        <img class="imagem" src="./img/pet-01.png" alt="Cornélio">
+                    </div>
+                    <div class="info">
+                        <h3 class="name">Cornélio</h3>
+                        <p class="valor">R$30,00</p>
+                    </div>     
+                    <button class="btn" type="reset" id="id">
+                        <i class='bx bx-trash'></i>
+                    </button>               
+                </div>                
+            </div> -->
+
+            <!--CARD 2-->
+            <!-- <div class="card-sticker">
+                <div class="content">
+                    <div class="image">
+                        <img class="imagem" src="./img/pet-02.png" alt="Caramelo">
+                    </div>
+                    <div class="info">
+                        <h3 class="name">Caramelo</h3>
+                        <p class="valor">R$30,00</p>
+                    </div>
+                    <button class="btn" type="reset" id="id">
+                        <a href="#">
+                            <i class='bx bx-trash'></i>
+                        </a>
+                    </button>                    
+                </div>
+            </div> -->
+
+            <!--CARD 3-->
+            <!-- <div class="card-sticker">
+                <div class="content">
+                    <div class="image">
+                        <img class="imagem" src="./img/pet-03.png" alt="Lilica">
+                    </div>
+                    <div class="info">
+                        <h3 class="name">Lilica</h3>
+                        <p class="valor">R$30,00</p>
+                    </div>
+                    <button class="btn" type="reset" id="id">
+                        <a href="#">
+                            <i class='bx bx-trash'></i>
+                        </a>
+                    </button>
+                </div>
+            </div> -->
+
+            <!--CARD 4-->
+            <!-- <div class="card-sticker">
+                <div class="content">
+                    <div class="image">
+                        <img class="imagem" src="./img/pet-04.png" alt="Dudu">
+                    </div>
+                    <div class="info">
+                        <h3 class="name">Dudu</h3>
+                        <p class="valor">R$30,00</p>
+                    </div>
+                    <button class="btn" type="reset" id="id">
+                        <a href="#">
+                            <i class='bx bx-trash'></i>
+                        </a>
+                    </button>
+                </div>
+            </div> -->
+
+            <!--CARD 5-->
+            <!-- <div class="card-sticker">
+                <div class="content">
+                    <div class="image">
+                        <img class="imagem" src="./img/pet-05.png" alt="Maggie">
+                    </div>
+                    <div class="info">
+                        <h3 class="name">Maggie</h3>
+                        <p class="valor">R$30,00</p>
+                    </div>
+                    <button class="btn" type="reset" id="id">
+                        <a href="#">
+                            <i class='bx bx-trash'></i>
+                        </a>
+                    </button>
+                </div>
+            </div> -->
+
+            <!--CARD 6-->
+            <!-- <div class="card-sticker">
+                <div class="content">
+                    <div class="image">
+                        <img class="imagem" src="./img/pet-06.png" alt="Bóris">
+                    </div>
+                    <div class="info">
+                        <h3 class="name">Bóris</h3>
+                        <p class="valor">R$30,00</p>                        
+                    </div>    
+                    
+                    <button class="btn" type="reset" id="id">
+                        <a href="#">
+                            <i class='bx bx-trash'></i>
+                        </a>
+                    </button>     
+                </div>
+            </div> -->
+
+            <!--CARD 7-->
+            <!-- <div class="card-sticker">
+                <div class="content">
+                    <div class="image">
+                        <img class="imagem" src="./img/pet-11.png" alt="Kitty">
+                    </div>
+                    <div class="info">
+                        <h3 class="name">Kitty</h3>
+                        <p class="valor">R$30,00</p>
+                    </div>
+                    <button class="btn" type="reset" id="id">
+                        <a href="#">
+                            <i class='bx bx-trash'></i>
+                        </a>
+                    </button>
+                </div>
+            </div> -->
+
+            <!--CARD 8-->
+            <!-- <div class="card-sticker">
+                <div class="content">
+                    <div class="image">
+                        <img class="imagem" src="./img/pet-12.png" alt="Letto">
+                    </div>
+                    <div class="info">
+                        <h3 class="name">Letto</h3>
+                        <p class="valor">R$30,00</p>
+                    </div>
+                    <button class="btn" type="reset" id="id">
+                        <a href="#">
+                            <i class='bx bx-trash'></i>
+                        </a>
+                    </button>
+                </div>
+            </div> -->
+
+            <!--CARD 9-->
+            <!-- <div class="card-sticker">
+                <div class="content">
+                    <div class="image">
+                        <img class="imagem" src="./img/pet-13.png" alt="Astro">
+                    </div>
+                    <div class="info">
+                        <h3 class="name">Astro</h3>
+                        <p class="valor">R$30,00</p>
+                    </div>
+                    <button class="btn" type="reset" id="id">
+                        <a href="#">
+                            <i class='bx bx-trash'></i>
+                        </a>
+                    </button>
+                </div>
+            </div> -->
+        </div>
+
+    </section>
+
+    <section class="banner" id="banner">       
+
+        <div class="container">   
+            <p>Contribua com as instituições e ONGs protetoras de animais de sua cidade! Faça a sua parte!<br> Doe! Adote um pet!</p>
+            <div class="box">
+                <img src="./img/pet-14.png" class="ilustra" alt="Totó">
+
+                <div class="content">
+                    <ul class="text">
+                        <li>
+                            <strong>ONGs no Brasil</strong>
+                            <h3>+300</h3>
+                        </li>
+                        <li>
+                            <strong>Pets apadrinhados</strong>
+                            <h3>+200</h3>
+                        </li>
+                        <li>
+                            <strong>Pets resgatados</strong>
+                            <h3>+180mil</h3>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="first-area">
+                <div class="left">
+                    <img src="./assets/logo.svg" alt="Logo">
+                    <p>Projeto realizado como parte do challenge do Programa ONE (Oracle + Alura). As imagens foram geradas por IA e retiradas da plataforma Freepik.</p>
+                </div>
+                <div class="right">
+                    <h3>Conecte-se comigo!</h3>
+                    <ul>
+                        <li>
+                            <a href="https://www.linkedin.com/in/cristianevilelaazevedo/" target="_blank">
+                                <i class='bx bxl-linkedin'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/cristianevilelaazevedo" target="_blank">
+                                <i class='bx bxl-github'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:chrystianevilela27@gmail.com" target="_blank"> 
+                                <i class='bx bx-envelope'></i> 
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="second-area">
+                <p>©2024 Inc. Todos os direitos reservados.</p>
+                <p><span>{ }</span> Design e Desenvolvimento por Cristiane Vilela</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="./js/script.js" type="module"></script>
+    <script src="./js/conectaApi.js" type="module"></script>
+    <script src="./js/mostrarProdutos.js" type="module"></script>
+    <script src="./js/criarProduto.js" type="module"></script>
+    <script src="./js/deletarProdutos.js" type="module"></script>
+</body>
+</html>
