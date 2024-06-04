@@ -10,7 +10,7 @@ async function criarProdutos(evento) {
     const imagem = document.querySelector("[data-imagem]").value;
 
     await conectaApi.criaProdutos(nome, valor, imagem);
-    await listaProdutos();
+    // await listaProdutos();
     formulario.reset();
     alert("Produto cadastrado com sucesso!");
 }

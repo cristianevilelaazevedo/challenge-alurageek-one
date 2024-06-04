@@ -5,14 +5,13 @@ async function listaProdutos() {
     return conexaoConvertida;
 }
 
-async function criaProdutos(id, nome, valor, imagem) {
+async function criaProdutos(nome, valor, imagem) {
     const conexao = await fetch("http://localhost:3000/products", {
         method: "POST",
         headers: {
             "Content-type": "application/json"
         },
         body: JSON.stringify({
-            id: id,
             nome: nome,
             valor: `R$ ${valor}`,
             imagem: imagem
@@ -29,7 +28,7 @@ async function criaProdutos(id, nome, valor, imagem) {
 
 async function deletarProdutos(ProdutoId) {
     try {
-        const conexao = await fetch("http://localhost:3000/products", {
+        const conexao = await fetch(`http://localhost:3000/products/${ProdutoId}`, {
             method: "DELETE",
         });
 
