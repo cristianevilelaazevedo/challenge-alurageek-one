@@ -53,12 +53,6 @@
       "nome": "Lili",
       "valor": "R$ 30",
       "imagem": "https://imagens-urls.vercel.app/img/pet-05.png"
-    },
-    {
-      "id": "e504",
-      "nome": "Dado",
-      "valor": "R$ 30",
-      "imagem": "https://imagens-urls.vercel.app/img/pet-06.png"
     }
   ]
 }
