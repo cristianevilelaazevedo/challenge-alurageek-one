@@ -1,14 +1,14 @@
 //Link da api no vercel = https://json-server-api-seven.vercel.app/
 
 async function listaProdutos() {
-    const conexao = await fetch("https://json-server-api-seven.vercel.app/");
+    const conexao = await fetch("https://json-server-api-seven.vercel.app/produtos");
     const conexaoConvertida = await conexao.json();
     
     return conexaoConvertida;
 }
 
 async function criaProdutos(nome, valor, imagem) {
-    const conexao = await fetch("https://json-server-api-seven.vercel.app/", {
+    const conexao = await fetch("https://json-server-api-seven.vercel.app/produtos", {
         method: "POST",
         headers: {
             "Content-type": "application/json"
@@ -30,7 +30,7 @@ async function criaProdutos(nome, valor, imagem) {
 
 async function deletarProdutos(ProdutoId) {
     try {
-        const conexao = await fetch(`https://json-server-api-seven.vercel.app/${ProdutoId}`, {
+        const conexao = await fetch(`https://json-server-api-seven.vercel.app/produtos/${ProdutoId}`, {
             method: "DELETE",
         });
 
